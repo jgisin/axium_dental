@@ -1,0 +1,261 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+/*Background with gradient*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  position: relative;
+  font-family: 'Kaushan Script';
+  color: white;
+  font-size: 64px;
+  text-shadow: 3px 3px 3px #002f4e;
+  padding-right: 100px;
+}
+
+h3 {
+  position: relative;
+  font-family: 'Raleway';
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  padding-right: 100px;
+}
+.bg-img {
+  width: 100%;
+  height: 100%;
+  background: url(image-path('1419986428.jpg')) center center no-repeat;
+  background-size: cover;
+}
+.bg-img:before {
+  height: 1000px;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #002f4e, #FFFFFF);
+  opacity: .8;
+}
+
+/*Nav Bar*/
+
+
+.snip1168 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-top: 50px;
+  padding-left: 220px;
+}
+
+@media screen and (min-width: 600px) {
+  .snip1168 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-left: 330px;
+    font-size: 20px;
+  }
+}
+
+.snip1168 * {
+  box-sizing: border-box;
+}
+.snip1168 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 5px 1.5em;
+  padding: 0;
+}
+.snip1168 a {
+  padding: 0.6em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1168 a:before,
+.snip1168 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1168 a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #c0392b;
+}
+.snip1168 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1168 a:hover:before,
+.snip1168 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1168 a:hover:after,
+.snip1168 .current a:after {
+  max-width: 100%;
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+  padding: 10px 20px;
+}
+
+#logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 250x;
+  width: 250px
+}
+
+#teeth1 {
+  box-shadow: 1px 10px 5px #002f4e;
+  position: relative;
+}
+
+img {
+  position: relative;
+}
+
+.dark {
+  color: #002f4e;
+}
+
+.light {
+  color: white;
+}
+
+//#post-body {
+//  opacity: 0.6;
+//}
+.post-body {
+  border-color: #002f4e;
+}
+
+.post {
+  color: white;
+  background: none;
+  border-color: #002f4e;
+}
+
+#post-header {
+  background-color: #002f4e;
+  border-color: #002f4e;
+}
+
+//tabbed content
+#tabs
+{
+  overflow: auto;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tabs li
+{
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+#tabs a
+{
+  -moz-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+  box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+  background: #002f4e;
+  background:    -moz-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:    -webkit-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:     -ms-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:      -o-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:         linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  color: #fff;
+  float: left;
+  font: bold 12px/35px 'Lucida sans', Arial, Helvetica;
+  height: 35px;
+  padding: 0 30px;
+  text-decoration: none;
+}
+
+#tabs a:hover
+{
+  background: #002f4e;
+  background:    -moz-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:    -webkit-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:     -ms-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:      -o-linear-gradient(220deg, transparent 10px, #002f4e 10px);
+  background:         linear-gradient(220deg, transparent 10px, #002f4e 10px);
+}
+
+#tabs a:focus
+{
+  outline: 0;
+}
+
+#tabs #current a
+{
+  background: #fff;
+  background:    -moz-linear-gradient(220deg, transparent 10px, #fff 10px);
+  background:    -webkit-linear-gradient(220deg, transparent 10px, #fff 10px);
+  background:     -ms-linear-gradient(220deg, transparent 10px, #fff 10px);
+  background:      -o-linear-gradient(220deg, transparent 10px, #fff 10px);
+  background:         linear-gradient(220deg, transparent 10px, #fff 10px);
+  text-shadow: none;
+  color: #333;
+}
+
+#content
+{
+  background: none;
+  -moz-border-radius: 0 2px 2px 2px;
+  -webkit-border-radius: 0 2px 2px 2px;
+  border-radius: 0 2px 2px 2px;
+  -moz-box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
+  -webkit-box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
+  box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
+  padding: 30px;
+}
+
+/* Remove the rule below if you want the content to be "organic" */
+#content div
+{
+  height: 200px;
+}
+
+/* --- */
+#about
+{
+  color: #999;
+}
+
+#about a
+{
+  color: #eee;
+}

@@ -1,0 +1,99 @@
+<%= image_tag "logo.png", id: 'logo' %>
+
+<div class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <ul class="snip1168">
+        <li class="current"><a href="#" data-hover="Home">Home</a></li>
+        <li><a href="#" data-hover="Products">Products</a></li>
+        <li><a href="#" data-hover="Education">Education</a></li>
+        <li><a href="#" data-hover="DTG">DTG</a></li>
+        <li><a href="#" data-hover="Information">Information</a></li>
+        <li><a href="#" data-hover="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-10 col-sm-offset-2">
+    <h1 class="text-center">AXIUM DENTAL ARTS</h1>
+    <h3 class="text-center">Official member of the Dental Technicians Guild</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+
+    <br/>
+    <h3>News Feed</h3>
+    <% @posts.each_with_index do |post, index| %>
+        <div class="panel panel-primary post">
+         <div class="panel-heading" id="post-header">
+           <%= post['created_time'] %>
+         </div>
+          <div class="panel-body post-body">
+            <img class="text-center" src="<%= post['picture'] %>" alt="">
+            <p><%= post['message'] %></p>
+          </div>
+        </div>
+    <% end %>
+</div>
+
+
+  <div class="col-sm-7 dark">
+    <br/>
+    <%= image_tag "teeth1.png", id: "teeth1" %>
+    <br/><br/><br/><br/><br/>
+
+    <ul id="tabs">
+      <li><a href="#" title="Axium-Dental-Arts">Axium Dental Arts</a></li>
+      <li><a href="#" title="Employees">Employees</a></li>
+      <li><a href="#" title="Dentists-and-Customers">Dentists and Customers</a></li>
+      <li><a href="#" title="General-Public">General Public</a></li>
+      <li><a href="#" title="Neighbors-and-Hosts">Neighbors and Hosts</a></li>
+    </ul>
+
+    <div id="content">
+      <div id="Axium-Dental-Arts">
+        <h3>About Us</h3>
+        <p>Axium Dental Arts is founded on the simple principle of integrity. Real integrity is doing the right thing always. We focus on providing honest communication and enhancing customer satisfaction by exceeding expectations. This approach is proven to provide the very highest level of quality and appearance since we do whatever we can to understand our customers' experiences. </p>
+        <p>Honesty, communication and quality are the essence of who we are and how we work with others. This explains Axium Dental Arts values in relation to the four groups to whom we are responsible and whose trust we have to earn. Click tabs to learn more.</p>
+      </div>
+      <div id="Employees">
+        <h3>Teamwork</h3>
+        <p>We believe that the fundamental quality of our workmanship and strength of our ability to communicate lies in our people. We invest in training in the newest methods and materials. We are members of the worldwide Dental Technicians Guild (DTG) which keeps us connected with the latest innovations, materials and techniques. </p>
+      </div>
+      <div id="Dentists-and-Customers">
+        <h3>Customer Satisfaction</h3>
+        <p>We believe in earning the enduring goodwill of consumers and users of our products and services. We regularly attend the American Academy of Cosmetic Dentistry conventions, meetings and continuing education classes to stay up to date on the practices that mean the most to you as a Dentist. We hear what Dentists think about their laboratory services and constantly strive to adapt; to provide the service and quality you expect and need at competitive rates. </p>
+      </div>
+      <div id="General-Public">
+        <h3>Safety</h3>
+        <p>We believe in being a responsible provider of dental prosthetics, with an obligation to ensure only the safest, highest quality materials are used. We make it our duty to ensure consumers health will always be protected. Our materials must meet the highest standards of safety, longevity, appearance and biocompatibility </p>
+      </div>
+      <div id="Neighbors-and-Hosts">
+        <h3>Community</h3>
+        <p>We believe in contributing to the well-being of the cities and communities where we conduct business. All restorations are 100% made in the beautiful state of Oregon because we truly care about what we provide to our fellow Americans. We respect our community by utilizing environmentally friendly materials and procedures whenever possible. We invest in the local community with donations and support for charities and organizations right here in the United States.</p>
+        <p>The sincerity of our beliefs encourages us to act with integrity at all times. We respect our customers and their customers too, that's is why we act responsibly and strive for excellence in everything we do.</p>
+        <p>We safeguard these beliefs by strictly adhering to a policy of open communication with our customers. We reinforce them by maintaining consistent quality at fair rates. We look forward to working with you!</p>
+    </div>
+
+  </div>
+</div>
+
+  <div class="col-sm-2">
+    <%= image_tag "dmggoods.png", style: "height: 150px; width: 150px;" %>
+    <br/>
+    <%= image_tag "dtg.png", style: "height: 150px; width: 150px;" %>
+    <br/>
+    <%= image_tag "vadim.png", style: "height: 150px; width: 150px;" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+
+  </div>
+</div>
