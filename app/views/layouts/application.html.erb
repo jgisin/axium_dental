@@ -7,6 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="bg-img">
+<%= image_tag "logo.png", id: 'logo' %>
+
+<div class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <ul class="snip1168">
+        <li class="current"><a href="" data-hover="Home">Home</a></li>
+        <li><a href="<%= products_url %>" data-hover="Products">Products</a></li>
+        <li><a href="#" data-hover="Education">Education</a></li>
+        <li><a href="#" data-hover="DTG">DTG</a></li>
+        <li><a href="#" data-hover="Information">Information</a></li>
+        <li><a href="#" data-hover="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <%= yield %>
 
