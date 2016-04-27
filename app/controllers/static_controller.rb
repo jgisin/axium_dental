@@ -5,4 +5,8 @@ class StaticController < ApplicationController
     @posts = facebook.get_posts[0..2]
     puts @posts
   end
+
+  def products
+
+  end
 end
