@@ -7,8 +7,10 @@ class Facebook
   end
 
   def get_posts
-    @posts = @graph.get_connection('me', 'posts',{ fields: ['id', 'picture', 'message', 'link', 'name', 'description', "likes.summary(true)", "shares", "comments.summary(true)"]})
+    @posts = @graph.get_connection('136313219727355', 'posts',{ fields: ['id', 'picture', 'message', 'link', 'name', 'description', "likes.summary(true)", "shares", "comments.summary(true)"]})
   end
+
+
 
 
 
