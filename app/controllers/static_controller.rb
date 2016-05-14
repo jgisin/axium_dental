@@ -9,4 +9,16 @@ class StaticController < ApplicationController
   def products
 
   end
+
+  def dtg
+  end
+
+  def education
+  end
+
+  def information
+  end
+
+  def contact
+  end
 end

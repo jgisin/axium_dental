@@ -11,7 +11,4 @@ class Facebook
   end
 
 
-
-
-
 end
